@@ -2,9 +2,7 @@ import requests                 # Simpler HTTP requests
 from bs4 import BeautifulSoup   # Python package for pulling data out of HTML and XML files
 import pandas as pd             # Python package for data manipulation and analysis
 import re                       # regular expressions
-import json                     # Python package used to work with JSON data
-from tqdm import tqdm           # python for displaying progressbar 
-from datetime import datetime   # python package to retireve DateTime
+
 url = 'https://www.imdb.com/search/title/?count=100&groups=oscar_best_picture_winners&sort=year%2Cdesc&ref_=nv_ch_osc'             
 url_text = requests.get(url).text                    # Get the session text for the link
 url_soup = BeautifulSoup(url_text, 'html.parser')   # Get data from the HTML

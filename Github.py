@@ -2,9 +2,7 @@ import requests                 # Simpler HTTP requests
 from bs4 import BeautifulSoup   # Python package for pulling data out of HTML and XML files
 import pandas as pd             # Python package for data manipulation and analysis
 import re                       # regular expressions
-import json                     # Python package used to work with JSON data
-from tqdm import tqdm           # python for displaying progressbar 
-from datetime import datetime   # python package to retireve DateTime
+
 
 Lang=input('Please input a Language: ')
 url = 'https://github.com/search?o=desc&q={}&s=stars&type=Repositories'.format(Lang)         
